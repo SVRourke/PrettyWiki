@@ -4,6 +4,20 @@
   "name": "Pretty Wiki",
   "version": "0.1.0",
   "description": "extension to customized wikipedia look for better readability",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": ["tabs"],
+  "commands": {
+    "Ctrl+M": {
+      "suggested_key": {
+        "default": "Ctrl+M",
+        "mac": "Command+M"
+      },
+      "description": "Ctrl+M"
+    }
+  },
 
   "content_scripts": [
     {
